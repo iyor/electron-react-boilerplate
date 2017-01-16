@@ -7,7 +7,6 @@
 import webpack from 'webpack';
 import validate from 'webpack-validator';
 import merge from 'webpack-merge';
-import formatter from 'eslint-formatter-pretty';
 import baseConfig from './webpack.config.base';
 
 const port = process.env.PORT || 3000;
@@ -58,10 +57,6 @@ export default validate(merge(baseConfig, {
       { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file' },
       { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=image/svg+xml' },
     ]
-  },
-
-  eslint: {
-    formatter
   },
 
   plugins: [
