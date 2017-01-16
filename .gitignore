@@ -31,6 +31,9 @@ app/node_modules
 # OSX
 .DS_Store
 
+# Vim edit file
+*.swp
+
 # App packaged
 release
 app/main.js
