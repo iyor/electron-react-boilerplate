@@ -9,7 +9,7 @@ export default class Home extends Component {
     return (
       <div>
         <div className={styles.container}>
-          <h2>Hdddome</h2>
+          <h2>Home</h2>
         </div>
       </div>
     );
